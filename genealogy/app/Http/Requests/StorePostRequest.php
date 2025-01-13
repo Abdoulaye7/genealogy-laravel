@@ -25,9 +25,7 @@ class StorePostRequest extends FormRequest
             'created_by' => ['required'],
             'first_name' => ['required'],
             'last_name' => ['required'],
-            'birth_name' => ['required'],
-            'middle_names' => ['required'],
-            'date_of_birth' => ['required'],
+            
 
         ];
     }
