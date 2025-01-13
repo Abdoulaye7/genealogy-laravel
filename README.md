@@ -74,9 +74,9 @@ Ce projet est une application de génêlogie développée avec Laravel 10 et une
 
 ### Diagramme de la Base de Données
 
-Voici une représentation du schéma de la base de données utilisée dans ce projet :
+Vous trouverez une représentation du schéma de la base de données utilisée dans ce projet :
 
-![Diagramme de la Base de Données](public/images/database_diagram.png)
+public/images/database_diagram.png
 
 
 
