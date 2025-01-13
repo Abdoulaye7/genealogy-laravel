@@ -72,6 +72,11 @@ Ce projet est une application de génêlogie développée avec Laravel 10 et une
 5. **votes**
    - Stocke les votes des membres pour accepter ou refuser une modification.
 
+### Diagramme de la Base de Données
+
+Voici une représentation du schéma de la base de données utilisée dans ce projet :
+
+![Diagramme de la Base de Données](public/images/database_diagram.png)
 
 
 
