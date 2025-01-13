@@ -4,11 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePostRequest;
 use App\Models\People;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class PersonController extends Controller
 {
     public function create(){
+
+
         return view('people.create');
     }
     public function store(StorePostRequest $storePostRequest){
@@ -29,6 +33,8 @@ class PersonController extends Controller
         dd($people);
     }*/
     public function index(){
+       
+
         $peoples = People::paginate(10);
 
         return view('people.index',[

@@ -20,10 +20,27 @@
           <a class="nav-link active" aria-current="page" href="{{ route('people.index')}}">People</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="{{ route('relationship.index')}}">Relationship</a>
         </li>
       </ul>
     </div>
+    <div class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        @auth
+          {{ Auth::user()->name}}
+          <form class="nav-item" action="{{ route('auth.logout')}}" method="post">
+           @method("delete")
+            @csrf
+            <button class="nav-link">Se deconnecter</button>
+
+         </form>
+        @endauth
+
+        @guest
+        <div class="nav-link">
+          <a href="{{ route('auth.login')}}">Se connecter </a>
+        </div>
+        @endguest
+      </div>
   </div>
 </nav>
  <div class="container">
