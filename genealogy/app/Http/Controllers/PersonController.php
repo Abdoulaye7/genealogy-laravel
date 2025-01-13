@@ -29,7 +29,7 @@ class PersonController extends Controller
         dd($people);
     }*/
     public function index(){
-        $peoples = People::paginate(1);
+        $peoples = People::paginate(10);
 
         return view('people.index',[
             'peoples' => $peoples

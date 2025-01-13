@@ -23,7 +23,7 @@ route::get("/genealogy",function(){
 route::prefix('/genealogy')->name('people.')->group(function (){
     route::get('/people',[PersonController::class,'index'])->name('index');
     route::get('/people/new',[PersonController::class,'create'])->name('create');
-    route::post('/people/new',[PersonController::class,'store']);
+    route::post('/people/new',[PersonController::class,'store'])->name('store');
 
 });
 

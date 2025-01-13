@@ -22,11 +22,12 @@ class StorePostRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'created_by' => ['required'],
-            'first_name' => ['required'],
-            'last_name' => ['required'],
-            
-
+            'created_by' => ['required', 'integer'],
+            'first_name' => ['required', 'string', 'max:255'],
+            'last_name' => ['required', 'string', 'max:255'],
+            'birth_name' => ['nullable', 'string', 'max:255'],
+            'middle_names' => ['nullable', 'string', 'max:255'],
+            'date_of_birth' => ['nullable', 'date'],
         ];
     }
 }

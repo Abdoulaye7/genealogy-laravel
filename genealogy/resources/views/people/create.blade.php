@@ -3,7 +3,7 @@
 @section('content')
  <h1>Formulaire d'ajout de People</h1>
 
- <form action="" method="post">
+ <form action="{{ route('people.store') }}" method="post">
     @csrf
     <div class="mb-3">
         <label for="" class="form-label">Creaed by</label>
