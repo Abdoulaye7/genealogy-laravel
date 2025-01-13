@@ -1,7 +1,11 @@
 @extends('base')
 
 @section('content')
-  <h1 class="my-4">Liste des People</h1>
+ <div class="d-flex justify-content-between align-items-center my-4">
+    <h1 class="mb-0">Liste des People</h1>
+    <a href="{{ route('people.create') }}" class="btn btn-primary">Créer une personne</a>
+</div>
+
 
   <div class="container">
     <table class="table table-striped">

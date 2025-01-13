@@ -27,7 +27,7 @@ class RelationshipController extends Controller
     // Créer la relation
     Relationship::create($validated);
 
-    return redirect()->route('relationships.index')->with('success', 'Relation ajoutée avec succès');
+    return redirect()->route('relationship.index')->with('success', 'Relation ajoutée avec succès');
     }
     public function index(){
 
